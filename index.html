@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<style>
+		button{
+		padding:10px;
+		background-color:pink;
+		border:2px solid black;
+		margin-left:200px;
+		
+		
+		}
+		.result{
+		   padding:10px 0;
+		   background:skyblue;
+		   margin:40px 50px;
+		   width:50px;
+		   height:45px;
+		   text-align:center;
+		   border-radius:50%;
+		   font-size:40px;
+		  }
+		</style>
+	</head>
+	<body>
+			
+			<button id="but" onclick="clickee()">Click Change Number</button>
+			<div class="result"></div>
+		<script>
+			let result=document.querySelector(".result");
+			
+			
+			function clickee(){
+				value=Math.floor(Math.random()*(100-50)+50);
+				result.innerText = value;
+			};
+		</script>
+		
+		
+	</body>
+</html>
